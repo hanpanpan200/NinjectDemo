@@ -10,6 +10,7 @@ namespace NinjectDemo
     {
         static void Main(string[] args)
         {
+		//remark
             var ninjectKernel=new StandardKernel();
             ninjectKernel.Bind<IValueCalculator>().To<LinqValueCalculator>();//绑定到LinValueCalculator的实例中
             //应为LinqValueCalculator的实例是依赖DefaultDiscountor的,因此要绑定到DefaultDiscountHelper的实例中
